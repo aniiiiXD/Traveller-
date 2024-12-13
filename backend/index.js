@@ -8,7 +8,7 @@ const { GoogleGenerativeAI} = require("@google/generative-ai")
 app.use(express.json());
 app.use(cors());
 
-const genAI = new GoogleGenerativeAI("AIzaSyCMsZ2_34eZanVFXNCNfFHw0XmphOKzWAw"); 
+const genAI = new GoogleGenerativeAI(); 
 const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
 
 app.post("/getDetails", async (req,res)=>{
