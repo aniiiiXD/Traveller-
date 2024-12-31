@@ -34,7 +34,7 @@ const SearchBar = () => {
     setError(null);
 
     try {
-      const response = await fetch("http://localhost:3003/getDetails", {
+      const response = await fetch("https://traveller-backendapi.vercel.app//getDetails", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
