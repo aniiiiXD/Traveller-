@@ -38,6 +38,7 @@ const SearchBar = () => {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
+        mode:'cors'
       });
 
       if (!response.ok) {
